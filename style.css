@@ -1,0 +1,327 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    background: rgb(255,250,245);
+}
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255,250,245);
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(https://i.postimg.cc/Pr1sw3SW/wp11428610-dogs-and-cats-spring-wallpapers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+header .hamburger
+{
+    display: none;
+}
+header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 60px;
+    background: rgb(255,250,245);
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+}
+
+header .logo
+{
+    color: rgb(27, 69, 51);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(27, 69, 51);
+    transition: .5s;
+}
+header .navigation li a:hover{
+    color: rgb(8, 0, 247);
+}
+.banner .title
+{
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+.banner .title h1
+{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 3px;
+}
+section
+{
+    padding: 100px 0;
+}
+.title h2
+{
+    font-size: 2.2em;
+    color: rgb(48,47,81);
+}
+.title p
+{
+    font-size: 1.2em;
+}
+.about .line
+{   
+    width: 100px;
+    border-top: 1px solid black;
+}
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about .title h2
+{
+    margin-bottom: 50px;
+}
+.imgtext
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+.imgtext img
+{
+    
+    height: 110vh;
+    background-size: cover;
+    width: 100%;
+}
+.imgtext .info
+{
+    position: absolute;
+
+    background: rgb(134, 169, 124);
+    height: 100%;
+    opacity: .90;
+    left: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding: 110px;
+    color: rgb(0, 0, 0);
+}
+.imgtext .info .infocontent 
+{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(48,47,81);
+}
+.imgtext .info .infocontent h3
+{
+    font-size: 2em;
+}
+.imgtext .info .infocontent p
+{
+    font-style: italic;
+    padding: 10px 0;
+}
+.review .title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 15px;
+}
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container img
+{
+    width: 300px;
+    height: 300px;
+}
+.container .bbox
+{
+    width: 300px;
+    height: 300px;
+}
+.container .cbox2
+{
+  
+    color: #fff;
+    position: relative;
+}
+.container .cbox2 h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+.container .cbox2 h1:hover{
+    color: blue;
+}
+.container .cbox4
+{
+   
+    color: #000000;
+    position: relative;
+}
+.container .cbox4 .boxdetail
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .cbox5
+{
+   
+    color: rgb(48,47,81);
+    position: relative;
+}
+.container .cbox5 .boxdetail
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .cbox7
+{
+   
+    color: rgb(48,47,81);
+    position: relative;
+}
+.container .cbox7 .boxdetail
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.strip
+{
+    background: rgb(47, 81, 48);
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.strip h1
+{
+    color: #fff;
+    font-weight: 300;
+}
+.strip .icons a{
+    color: #fff;
+}
+@media (max-width: 991px){
+    .banner
+    {
+        margin: 0px;
+    }
+    .banner .title h1 {
+        font-size: 2em;
+    }
+    .contact
+    {
+        margin: 0px;
+    }
+    .about
+    {
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .imgtext img
+    {
+        width: 350px;
+        object-fit: cover;
+    }
+    .imgtext .info
+    {
+        width: 300px;
+        left: 30px;
+        padding: 20px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .hamburger
+    {
+        display: block;
+    }
+    header .logo
+    {
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 768px)and (max-width: 991px){ 
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .imgtext img
+    {
+        width: 700px;
+        object-fit: cover;
+        height: 700px;
+    }
+    .imgtext .info
+    {
+        width: 650px;
+        left: 30px;
+        justify-content: center;
+        gap: 60px;
+    }   
+    header .hamburger
+    {
+        display: block;
+    }
+    header .logo
+    {
+        font-size: 1.5em;
+    }
+}
